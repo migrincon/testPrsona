@@ -44,19 +44,19 @@ class PersonaTestCase(unittest.TestCase):
         self.assertIsInstance(self.persona1, Persona)
         self.assertNotIsInstance(self.grupo, Persona)
 
-    """ def test_alamacenar(self):
+    def test_alamacenar(self):
         self.persona1.almacenar()
 
         session = Session()
         persona = session.query(Persona).filter(Persona.nombre == 'Alejandra' and Persona.edad == 25).first()
 
         self.assertEqual(persona.dar_nombre(),'Alejandra')
-        self.assertEqual(persona.dar_edad(),25) """
+        self.assertEqual(persona.dar_edad(),25)
     
     def test_prueba(self):
         self.assertEqual(0, 0)
 
-    """ def test_recuperar(self):
+    def test_recuperar(self):
         session = Session()
         session.add(self.persona2)
         session.commit()
@@ -66,4 +66,4 @@ class PersonaTestCase(unittest.TestCase):
         persona.recuperar("Diego", 22)
 
         self.assertEqual(persona.dar_nombre(),'Diego')
-        self.assertEqual(persona.dar_edad(),22) """
+        self.assertEqual(persona.dar_edad(),22) 
