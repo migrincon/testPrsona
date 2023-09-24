@@ -38,3 +38,4 @@ jobs:
             GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
             source-branch: ${{ github.ref }}
             target-branch: develop
+            run: echo "::set-output name=ramaHistoria::${source-branch}"
