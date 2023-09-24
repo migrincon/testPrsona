@@ -6,7 +6,7 @@ from src.Comunidad.base import Session
 
 class PersonaTestCase(unittest.TestCase):
     # Esto es una prueba del automerge
-    # Esto es una prueba de rama HU001 - MERGE2
+    # Esto es una prueba de rama HU001 - MERGE3
     def setUp(self):
         self.persona1 = Persona(nombre='Alejandra', edad=25)
         self.persona2 = Persona(nombre='Diego', edad=22)
