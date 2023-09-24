@@ -1,2 +1,2 @@
-coverage==7.3
+coverage==7.2.7
 sqlalchemy==2.0.20
